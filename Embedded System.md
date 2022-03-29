@@ -11,3 +11,5 @@
 用-mfloat-abi=soft编译的app或者库，在用-mfloat-abi=softfp编译的OS中是可以跑的；
 用-mfloat-abi=softfp编译的app或者库，在用-mfloat-abi=soft编译的OS中，如果SoC中没有FPU，那么是不能跑的。
 而-mfloat-abi=softfp/soft与-mfloat-abi=hard，是互不兼容的。
+
+* c28x 编译 fp_mode应设置为 relax，编译自动调用FPU或TMU进行浮点运算；求倒数、开根号，TMU更快
