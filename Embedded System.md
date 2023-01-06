@@ -13,3 +13,5 @@
 而-mfloat-abi=softfp/soft与-mfloat-abi=hard，是互不兼容的。
 
 * c28x 编译 fp_mode应设置为 relax，编译自动调用FPU或TMU进行浮点运算；求倒数、开根号，TMU更快
+
+* c28x 函数调用和中断调用的入栈操作参考文件spru403f。其中RPC寄存器用于保存返回地址。
